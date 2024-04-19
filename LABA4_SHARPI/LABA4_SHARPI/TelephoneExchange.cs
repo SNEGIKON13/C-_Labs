@@ -21,11 +21,8 @@ public class TelephoneExchange
         set => _numberOfSubscribers = value;
     }
 
-    private TelephoneExchange(string address, uint numberOfSubscribers, double price)
+    private TelephoneExchange()
     {
-        _numberOfSubscribers = numberOfSubscribers;
-        _address = address;
-        _tariff = new Tariff(price);
     }
 
     public override string ToString()
@@ -63,10 +60,10 @@ public class TelephoneExchange
         _tariff.PriceDown(decrease);
     }
 
-    public static TelephoneExchange Instance(string address = " ", uint numberOfSubscribers = 0, double price = 0)
+    public static TelephoneExchange Instance()
     {
         {
-            return _instance ??= new TelephoneExchange(address, numberOfSubscribers, price);
+            return _instance ??= new TelephoneExchange();
         }
     }
 }

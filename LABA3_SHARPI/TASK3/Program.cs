@@ -30,55 +30,63 @@ while (true)
                         Console.WriteLine("Введите дату:");
                         date = Console.ReadLine();
                     } while (DataService.GetDay(date) == "Z");
+
                     Console.WriteLine($"День недели {DataService.GetDay(date)}");
                     break;
                 case 2:
                     do
                     {
+                        invalidInput = false;
                         Console.WriteLine("\nВведите день: ");
                         string strD = Console.ReadLine();
-                        if (!int.TryParse(strD, out day))
+                        if (!int.TryParse(strD, out day) ||
+                            !DataService.isValidDay(day))
                         {
-                            Console.WriteLine("Неправильный ввод!");
+                            Console.WriteLine("\nНеправильный ввод! Повторите попытку!");
                             invalidInput = true;
                         }
                     } while (invalidInput);
 
                     do
                     {
+                        invalidInput = false;
                         Console.WriteLine("\nВведите месяц: ");
                         string strM = Console.ReadLine();
-                        if (!int.TryParse(strM, out month))
+                        if (!int.TryParse(strM, out month) ||
+                            !DataService.isValidMonth(day, month))
                         {
-                            Console.WriteLine("Неправильный ввод!");
+                            Console.WriteLine("\nНеправильный ввод! Повторите попытку!");
                             invalidInput = true;
                         }
                     } while (invalidInput);
 
                     do
                     {
+                        invalidInput = false;
                         Console.WriteLine("\nВведите год: ");
                         string strY = Console.ReadLine();
-                        if (!int.TryParse(strY, out year))
+                        if (!int.TryParse(strY, out year) ||
+                            !DataService.isValidYear(day, month, year))
                         {
-                            Console.WriteLine("Неправильный ввод!");
+                            Console.WriteLine("\nНеправильный ввод! Повторите попытку!");
                             invalidInput = true;
                         }
                     } while (invalidInput);
 
-                    Console.WriteLine("\nДней пройдет между текущей датой и датой: ");
                     if (DataService.GetDaysSpan(day, month, year) == -1)
                     {
                         Console.WriteLine("Недопустимая дата");
                     }
                     else
                     {
+                        Console.WriteLine("\nДней пройдет между текущей датой и датой: ");
                         Console.WriteLine(DataService.GetDaysSpan(day, month, year));
                     }
+
                     break;
                 default:
                     restart = true;
-                    Console.WriteLine("Неправильный ввод!");
+                    Console.WriteLine("\nНеправильный ввод! Повторите попытку!");
                     break;
             }
         }
@@ -95,7 +103,8 @@ while (true)
         Console.WriteLine("\n1. Продолжить");
         Console.WriteLine("2. Закончить");
         string strMenu = Console.ReadLine();
-        if (long.TryParse(strMenu, out long menuChoose)) {
+        if (long.TryParse(strMenu, out long menuChoose))
+        {
             switch (menuChoose)
             {
                 case 1:

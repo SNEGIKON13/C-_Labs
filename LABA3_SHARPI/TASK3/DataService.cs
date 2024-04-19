@@ -48,7 +48,63 @@ public class DataService
         return numberOfDays;
     }
 
-    static bool IsValidDate(int day, int month, int year)
+    public static bool isValidDay(int day)
+    {
+        if (day > 0 && day < 32)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public static bool isValidMonth(int day, int month)
+    {
+        if (month > 0 && month < 13)
+        {
+            if (((month == 4 || month == 6 || month == 9 || month == 11) && day > 30)
+                || month == 2 && day > 29)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static bool isValidYear(int day, int month, int year)
+    {
+        if (month == 2)
+        {
+            if (IsLeapYear(year))
+            {
+                if (day > 29)
+                    return false;
+            }
+            else
+            {
+                if (day > 28)
+                    return false;
+            }
+
+            return true;
+        }
+        else
+        {
+            if (year > -1)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static bool IsValidDate(int day, int month, int year)
     {
         if (year < 1 || month < 1 || month > 12 || day < 1 || day > 31)
             return false;
@@ -69,6 +125,7 @@ public class DataService
         }
         return true;
     }
+
     static bool IsLeapYear(int year)
     {
         return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;

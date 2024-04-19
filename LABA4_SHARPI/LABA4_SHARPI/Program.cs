@@ -1,6 +1,6 @@
 ﻿using LABA4_SHARPI;
 
-TelephoneExchange telephoneExchange = TelephoneExchange.Instance("МТС", 10, 10);
+TelephoneExchange telephoneExchange = TelephoneExchange.Instance();
 
 telephoneExchange.PriceUp();
 telephoneExchange.PriceUp();
