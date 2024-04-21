@@ -1,18 +1,18 @@
 ﻿using LABA5_SHARPI;
 
-TelephoneExchange telephoneExchange = new TelephoneExchange();
+var telephoneExchange = new TelephoneExchange();
 
-telephoneExchange.TariffsList.Add(new Tariffs() {Area = EnumOfTariffAreas.Minsk, Price = 10});
-telephoneExchange.TariffsList.Add(new Tariffs() {Area = EnumOfTariffAreas.Brest, Price = 5});
-telephoneExchange.TariffsList.Add(new Tariffs() {Area = EnumOfTariffAreas.Homiel, Price = 15});
+telephoneExchange.TariffsList.Add(new Tariffs {Area = EnumOfTariffAreas.Minsk, Price = 10});
+telephoneExchange.TariffsList.Add(new Tariffs {Area = EnumOfTariffAreas.Brest, Price = 5});
+telephoneExchange.TariffsList.Add(new Tariffs {Area = EnumOfTariffAreas.Homiel, Price = 15});
 
-Clients valiulin = new Clients() { Surname = "Валиуллин" };
+var valiulin = new Clients { Surname = "Валиуллин" };
 
 valiulin.NumberOfCallsPerArea.Add(EnumOfTariffAreas.Minsk, 2);
 valiulin.NumberOfCallsPerArea.Add(EnumOfTariffAreas.Brest, 3);
 valiulin.NumberOfCallsPerArea.Add(EnumOfTariffAreas.Homiel, 4);
 
-Clients lenin = new Clients() { Surname = "Ленин" };
+var lenin = new Clients { Surname = "Ленин" };
 
 lenin.NumberOfCallsPerArea.Add(EnumOfTariffAreas.Minsk, 2);
 lenin.NumberOfCallsPerArea.Add(EnumOfTariffAreas.Brest, 11);

@@ -12,8 +12,8 @@ public enum EnumOfTariffAreas
 
 public class TelephoneExchange
 {
-    public List<Tariffs> TariffsList { get; set; } = new();
-    public List<Clients> ClientsList { get; set; } = new();
+    public List<Tariffs> TariffsList { get; set; } = [];
+    public List<Clients> ClientsList { get; set; } = [];
 
     public double CalculateClientCost(Clients client)
     {
@@ -24,6 +24,7 @@ public class TelephoneExchange
             var tariff = TariffsList.Find(t => t.Area == tariffOfCallsPerArea.Key);
             if (tariff != null) clientCost += tariff.Price * tariffOfCallsPerArea.Value;
         }
+
 
         // foreach (KeyValuePair<TariffAreas, int> tariffOfCallsPerArea in client.NumberOfCallsPerArea)
         // {
@@ -40,11 +41,11 @@ public class TelephoneExchange
         return clientCost;
     }
 
-    public double CalculateClientCost(String surname)
+    public double CalculateClientCost(string surname)
     {
         double clientCost = 0;
 
-        Clients client = ClientsList.Find(t => surname == t.Surname);
+        var client = ClientsList.Find(t => surname == t.Surname);
 
         foreach (var tariffOfCallsPerArea in client.NumberOfCallsPerArea)
         {
