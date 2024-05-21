@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="LABA5_SHARPI.TelephoneExchange">
+    <Position X="1" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAAAABAAAAgA=</HashCode>
+      <FileName>TelephoneExchange.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ClientsList" />
+      <Property Name="TariffsList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LABA5_SHARPI.Clients">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Clients.cs</FileName>
+      <NewMemberFileName>TelephoneExchange.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA5_SHARPI.Tariffs">
+    <Position X="5.25" Y="3.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Tariffs.cs</FileName>
+      <NewMemberFileName>TelephoneExchange.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
