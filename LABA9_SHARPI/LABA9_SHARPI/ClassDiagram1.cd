@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="LABA9_SHARPI.Director">
+    <Position X="11" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Director.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA9_SHARPI.InkjetPrinter">
+    <Position X="2.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAQAAAAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
+      <FileName>InkjetPrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.InkjetPrinterBuilder">
+    <Position X="7.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InkjetPrinterBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA9_SHARPI.LaserPrinter">
+    <Position X="5.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
+      <FileName>LaserPrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.LaserPrinterBuilder">
+    <Position X="1" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LaserPrinterBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA9_SHARPI.PrinterBase">
+    <Position X="5.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEgAAAAEAAA=</HashCode>
+      <FileName>PrinterBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA9_SHARPI.PrinterBuilder">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAABAgAAAAAAAAABIAAA=</HashCode>
+      <FileName>PrinterBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA9_SHARPI.SublimationPrinter">
+    <Position X="8" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
+      <FileName>SublimationPrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.SublimationPrinterBuilder">
+    <Position X="4.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SublimationPrinterBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="LABA9_SHARPI.IPrintFromRoll">
+    <Position X="10.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPrintFromRoll.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LABA9_SHARPI.IPrintFromSheet">
+    <Position X="12.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPrintFromSheet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LABA9_SHARPI.ISort">
+    <Position X="10.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISort.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LABA9_SHARPI.IWebInterface">
+    <Position X="12.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWebInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
