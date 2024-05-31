@@ -1,97 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="LABA9_SHARPI.Director">
-    <Position X="11" Y="0.5" Width="1.75" />
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LABA9_SHARPI.PrintImplementation.InkjetPrint" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>PrintImplementation\InkjetPrint.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.PrintImplementation.LaserPrint" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>PrintImplementation\LaserPrint.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.PrintImplementation.SublimationPrint" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>PrintImplementation\SublimationPrint.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.Printers.InkjetPrinter" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Printers\InkjetPrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.Printers.LaserPrinter" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Printers\LaserPrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.Printers.PrinterBase" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAEgAAAAEAAA=</HashCode>
+      <FileName>Printers\PrinterBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LABA9_SHARPI.Printers.SublimationPrinter" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Printers\SublimationPrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LABA9_SHARPI.Builder.Director">
+    <Position X="14.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Director.cs</FileName>
+      <FileName>Builder\Director.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LABA9_SHARPI.InkjetPrinter">
-    <Position X="2.25" Y="6" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAABAAAAAQAAAAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
-      <FileName>InkjetPrinter.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="LABA9_SHARPI.InkjetPrinterBuilder">
-    <Position X="7.25" Y="3" Width="1.75" />
+  <Class Name="LABA9_SHARPI.Builder.InkjetPrinterBuilder" Collapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>InkjetPrinterBuilder.cs</FileName>
+      <FileName>Builder\InkjetPrinterBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LABA9_SHARPI.LaserPrinter">
-    <Position X="5.5" Y="7.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
-      <FileName>LaserPrinter.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="LABA9_SHARPI.LaserPrinterBuilder">
-    <Position X="1" Y="3" Width="1.75" />
+  <Class Name="LABA9_SHARPI.Builder.LaserPrinterBuilder" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>LaserPrinterBuilder.cs</FileName>
+      <FileName>Builder\LaserPrinterBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LABA9_SHARPI.PrinterBase">
-    <Position X="5.5" Y="4.75" Width="1.75" />
+  <Class Name="LABA9_SHARPI.Builder.PrinterBuilder" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEgAAAAEAAA=</HashCode>
-      <FileName>PrinterBase.cs</FileName>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAABAhAAAAEAAAABIAAA=</HashCode>
+      <FileName>Builder\PrinterBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LABA9_SHARPI.PrinterBuilder">
-    <Position X="4.5" Y="0.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAABAgAAAAAAAAABIAAA=</HashCode>
-      <FileName>PrinterBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="LABA9_SHARPI.SublimationPrinter">
-    <Position X="8" Y="6.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
-      <FileName>SublimationPrinter.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="LABA9_SHARPI.SublimationPrinterBuilder">
-    <Position X="4.5" Y="3.25" Width="1.75" />
+  <Class Name="LABA9_SHARPI.Builder.SublimationPrinterBuilder" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SublimationPrinterBuilder.cs</FileName>
+      <FileName>Builder\SublimationPrinterBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LABA9_SHARPI.IPrintFromRoll">
-    <Position X="10.25" Y="3.5" Width="1.75" />
+  <Interface Name="LABA9_SHARPI.PrintImplementation.IPrintImplementation">
+    <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IPrintFromRoll.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>PrintImplementation\IPrintImplementation.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="LABA9_SHARPI.IPrintFromSheet">
-    <Position X="12.5" Y="3.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IPrintFromSheet.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="LABA9_SHARPI.ISort">
-    <Position X="10.25" Y="5" Width="1.75" />
+  <Interface Name="LABA9_SHARPI.Interfaces.ISort">
+    <Position X="11" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ISort.cs</FileName>
+      <FileName>Interfaces\ISort.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="LABA9_SHARPI.IWebInterface">
-    <Position X="12.5" Y="5" Width="1.75" />
+  <Interface Name="LABA9_SHARPI.Interfaces.IPrintFromRoll">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPrintFromRoll.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LABA9_SHARPI.Interfaces.IPrintFromSheet">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPrintFromSheet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LABA9_SHARPI.Interfaces.IWebInterface">
+    <Position X="12.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IWebInterface.cs</FileName>
+      <FileName>Interfaces\IWebInterface.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

@@ -1,4 +1,6 @@
-﻿using LABA9_SHARPI;
+﻿using LABA9_SHARPI.Builder;
+using LABA9_SHARPI.Printers;
+using LABA9_SHARPI.Interfaces;
 
 List<PrinterBase> printers = new List<PrinterBase>();
 

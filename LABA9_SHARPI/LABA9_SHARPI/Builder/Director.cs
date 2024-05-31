@@ -1,4 +1,7 @@
-namespace LABA9_SHARPI;
+namespace LABA9_SHARPI.Builder;
+
+using Printers;
+using PrintImplementation;
 
 public static class Director
 {
@@ -7,6 +10,7 @@ public static class Director
         return new LaserPrinterBuilder()
             .SetModel(model)
             .SetPrintFormat(format)
+            .SetPrintImplementation(new LaserPrint())
             .Build();
     }
 
@@ -15,6 +19,7 @@ public static class Director
         return new InkjetPrinterBuilder()
             .SetModel(model)
             .SetPrintFormat(format)
+            .SetPrintImplementation(new InkjetPrint())
             .Build();
     }
 
@@ -23,6 +28,7 @@ public static class Director
         return new SublimationPrinterBuilder()
             .SetModel(model)
             .SetPrintFormat(format)
+            .SetPrintImplementation(new SublimationPrint())
             .Build();
     }
 }

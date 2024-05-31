@@ -1,15 +1,15 @@
-namespace LABA9_SHARPI;
+namespace LABA9_SHARPI.Printers;
+
+using Interfaces;
+using PrintImplementation;
 
 public class InkjetPrinter : PrinterBase, IPrintFromRoll, IWebInterface
 {
+    public InkjetPrinter(IPrintImplementation printImplementation) : base(printImplementation) { }
+
     public override void GetInfo()
     {
         Console.WriteLine($"Струйный Принтер: Модель={Model}, Формат={PrintFormat}");
-    }
-
-    public override void Print()
-    {
-        Console.WriteLine("Струйная печать...");
     }
 
     public void PrintFromRoll()

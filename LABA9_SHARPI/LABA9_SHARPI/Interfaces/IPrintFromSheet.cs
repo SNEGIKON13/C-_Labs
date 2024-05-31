@@ -1,4 +1,4 @@
-namespace LABA9_SHARPI;
+namespace LABA9_SHARPI.Interfaces;
 
 public interface IPrintFromSheet
 {
